@@ -20,4 +20,4 @@ jobs:
     concurrency:
       group: claude-review-${{ github.event.issue.number }}
       cancel-in-progress: true
-    uses: yearn/yearn-gha/.github/workflows/claude-code-review.yml@add-cc-review # TEST: branch ref, pin to a full SHA before real use
+    uses: yearn/yearn-gha/.github/workflows/claude-code-review.yml@17446bfb9e9c7911367379222fa5b7e3fff52fa3
