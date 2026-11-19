@@ -13,8 +13,7 @@ permissions:
 
 jobs:
   deploy:
-    uses: yearn/yearn-gha/.github/workflows/cloudflare-deploy.yml@8c716af782569d486f7dd309a70d3743643bbde8
+    uses: yearn/yearn-gha/.github/workflows/cloudflare-deploy.yml@1f0f151f2cc5d2ae16f3e43c7d7b35b867d6bd31
     with:
       project: dummy-practice
-      build-command: bun run build:cloudflare
       identity-id: ${{ github.event_name == 'pull_request' && vars.DOPPLER_PREVIEW_IDENTITY_ID || vars.DOPPLER_PRODUCTION_IDENTITY_ID }}
