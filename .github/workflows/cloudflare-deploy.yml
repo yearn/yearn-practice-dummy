@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   deploy:
-    uses: yearn/yearn-gha/.github/workflows/cloudflare-deploy.yml@3e872cf8894b0683b5d931711ae5aa0e78832ccf
+    uses: yearn/yearn-gha/.github/workflows/cloudflare-deploy.yml@8c716af782569d486f7dd309a70d3743643bbde8
     with:
       project: dummy-practice
       build-command: bunx opennextjs-cloudflare build
